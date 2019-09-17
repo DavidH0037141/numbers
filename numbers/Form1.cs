@@ -42,6 +42,21 @@ namespace numbers
             richTextBox1.AppendText(c.ToString("N3") + "\n");
             richTextBox1.AppendText(c.ToString("0.0000000000000000") + "\n");
             richTextBox1.AppendText(c.ToString("0.000") + "\n");
+
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+
         }
     }
 }
+
+
+
+
